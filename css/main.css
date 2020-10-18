@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.7;
-  background-color: #ffffff;
+  background: #f8f8f8;
   scroll-behavior: smooth;
   overflow: hidden;
   overflow-y: scroll;
@@ -27,6 +27,9 @@ a:hover {
   text-decoration: none;
 }
 
+header{
+    background: #ffffff;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -62,12 +65,15 @@ main {
 }
 
 footer{
-    height: 20vh;
+    height: 5vh;
     margin-top: 3vh;
     background: #29323d;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding-top: 1vh;
 }
-
 .hero {
   height: 50vh;
   background: #f0f0f0;
@@ -91,6 +97,7 @@ footer{
   margin: 0% auto;
   border-bottom: 1px solid #b3b3b3;
   padding: 0 10.5vw;
+  background: #ffffff;
 }
 
 .newsletter-min form {
@@ -118,7 +125,8 @@ footer{
 .newsletter-min form button {
   height: 4.5vh;
   width: 10vw;
-  font-size: 1.2em;
+  font-size: 2em;
+  cursor: pointer;
   font-weight: 800;
   background-color: #29323d;
   color: white;
@@ -132,27 +140,32 @@ footer{
   justify-content: center;
   padding: 3vh 0.5vw;
   flex-wrap: wrap;
+ 
 }
 .latest h1 {
   font-size: 2em;
   margin: 1vh 0;
 }
 .post-card {
-  width: 25%;
+  width: 100%;
   margin: 1vh 3vw 5vh 3vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding-top: 1vh;
 }
 .post-img {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   border-radius: 5px;
 }
 .post-preview {
   display: flex;
   flex-direction: column;
+  margin: 0 1vw 1vh 1vw;
 }
 .title {
   margin-top: 1vh;
@@ -160,29 +173,40 @@ footer{
 }
 .summery {
   font-size: 0.9em;
-  text-align: justify;
-  text-justify: auto;
   margin-top: 1vh;
+  line-height: 2em;
 }
 .details {
   font-size: 1em;
   margin-top: 2vh;
 }
 
+.action{
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0 10vh 0;
+}
 .view-more {
-  height: 61px;
+  height: 41px;
   width: 141px;
-  background-color: #ffffff;
+  background-color:#29323d;
+  color: #ffffff;
   border-radius: 50px;
   align-self: center;
   margin-top: 1vh;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   border: 1px solid #b3b3b3;
+  cursor: pointer;
 }
 
 .related-articles {
   width: fit-content;
+  background: #ffffff;
+  height: fit-content;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
 }
 .related-articles ul {
   display: flex;
@@ -204,7 +228,8 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 60%;
+  background: #ffffff;
 }
 
 .post .content p {
@@ -218,6 +243,16 @@ footer{
   border-radius: 5px;
 }
 
+.big-title{
+    font-size: 3rem;
+}
+
+.content ol{
+    padding-left:1vw; 
+}
+.content ul{
+    padding-left:1vw; 
+}
 
 @media only screen and (min-width: 320px) {
     .tagline {
@@ -384,8 +419,9 @@ footer{
       display: block;
     }
     .post-card {
-      width: 25%;
+      width: 30%;
       align-items: center;
+      margin: 2vh 1vw;
     }
     .title {
       font-size: 1.2em;
