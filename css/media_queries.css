@@ -1,0 +1,644 @@
+/*   Media queries */
+
+@media only screen and (min-width: 320px) {
+
+    .brand {
+        margin: 1vh auto;
+    }
+
+    .tagline {
+        font-size: 1.5em;
+    }
+
+    .supporting-tagline {
+        font-size: 1em;
+    }
+
+    .hero {
+        height: 30vh;
+    }
+
+    nav ul li:nth-child(1) {
+        position: absolute;
+        top: .6em;
+        left: 3px;
+        font-size: 21px;
+    }
+
+    nav ul li:nth-child(2) {
+        margin: 1vh auto;
+
+    }
+
+    nav ul li:nth-child(3) {
+        display: none;
+    }
+
+    nav ul li:nth-child(4) {
+        display: none;
+    }
+
+    nav ul li:nth-child(5) {
+        display: none;
+    }
+
+    nav ul li:nth-child(6) {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .latest {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-card {
+        width: 80%;
+        max-width: 350px;
+        align-items: center;
+    }
+
+    .title {
+        font-size: .7rem;
+    }
+
+    .summery {
+        font-size: 0.55rem;
+    }
+
+    .newsletter-min {
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+
+    .newsletter-min form input {
+        margin: 1rem 0 0 0;
+        padding-left: 1rem;
+        font-size: .75rem;
+        font-weight: 500;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .newsletter-min form button {
+        width: 6rem;
+        margin: 2vh 0 1vh 0;
+        border-radius: 5px;
+        font-size: .6rem;
+    }
+
+    .newsletter-min h1 {
+        font-size: 1.3em;
+    }
+
+    .newsletter-min {
+        flex-direction: column;
+    }
+
+    .details {
+        font-size: .6rem;
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #read__more button {
+        height: 3.5vh;
+        width: 4.5rem;
+        max-width: 170px;
+        border-radius: 3px;
+        align-self: center;
+        font-size: .6rem;
+        font-weight: 700;
+        margin: 1vh 0;
+    }
+
+    /*   post   */
+
+    .share__post {
+        display: block;
+        width: 2rem;
+    }
+
+    .share__post h1 {
+        font-size: .7em;
+        margin: .2em .19em;
+    }
+
+    .share__post ul li a i {
+        font-size: 12px;
+    }
+
+    .share__post ul li:first-child {
+        border-top-right-radius: 10px;
+    }
+
+    .share__post ul li:last-child {
+        border-bottom-right-radius: 10px;
+    }
+
+    .share__post ul li a i {
+        font-size: 12px;
+    }
+
+    .cover__image {}
+
+    .container {
+        width: 100%;
+        margin: 3rem auto;
+    }
+
+    .big-title {
+        font-size: .9em;
+    }
+
+    .author {
+        width: 100%;
+        max-width: 280px;
+        margin: 1vh auto;
+        font-size: .9rem;
+        flex-direction: column;
+        padding: 1vh 0;
+    }
+
+    .wraper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author__name {
+        font-size: .6em;
+        margin: auto 1px;
+    }
+
+    .author__profession {
+        font-size: .6em;
+    }
+
+    .author__bio {
+        font-size: .55em;
+        text-align: left;
+    }
+
+    .author__socials {
+        font-size: .95em;
+        text-align: end;
+    }
+
+    .author .wraper img {
+        border-radius: 200px;
+        max-width: 100%;
+        height: 6vh;
+        margin: 0;
+    }
+
+    figcaption {
+        font-size: 0.55em;
+    }
+
+    .post {
+        padding: 0;
+    }
+
+    .content {
+        font-size: .6em;
+        text-align: left;
+    }
+
+    footer {
+        height: 3vh;
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .tagline {
+        font-size: 1.5em;
+    }
+
+    .supporting-tagline {
+        font-size: 1em;
+    }
+
+    .hero {
+        height: 30vh;
+    }
+
+    nav ul li:nth-child(1) {
+        display: none;
+    }
+
+    nav ul li:nth-child(2) {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li:nth-child(3) {
+        display: block;
+    }
+
+    nav ul li:nth-child(4) {
+        display: block;
+    }
+
+    nav ul li:nth-child(5) {
+        display: block;
+    }
+
+    nav ul li:nth-child(6) {
+        display: block;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    .latest {
+        flex-direction: row;
+    }
+
+    .latest article:last-child {
+        display: none;
+    }
+
+    .post-card {
+        width: 30vw;
+        max-width: 260px;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .summery {
+        font-size: 0.7em;
+    }
+
+    .newsletter-min {
+        padding: 1vh 1vw;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .newsletter-min form {
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .newsletter-min form input {
+        margin: 1vh 0 0 3vw;
+        padding-left: 1vw;
+        font-size: .8rem;
+        font-weight: 500;
+        width: 80%;
+    }
+
+    .newsletter-min form button {
+        width: 20%;
+        min-width: 100px;
+        margin: 2vh 0 1vh 2vw;
+        border-radius: 5px;
+        font-size: 0.85em;
+    }
+
+    .newsletter-min h1 {
+        font-size: 1.2em;
+    }
+
+
+    /*   post   */
+
+    .share__post {
+        display: block;
+        width: 2.5rem;
+    }
+
+    .share__post h1 {
+        font-size: .85em;
+        margin: .2em .19em;
+    }
+
+    .share__post ul li a i {
+        font-size: 12px;
+    }
+
+    .share__post ul li:first-child {
+        border-top-right-radius: 10px;
+    }
+
+    .share__post ul li:last-child {
+        border-bottom-right-radius: 10px;
+    }
+
+    .share__post ul li a i {
+        font-size: 12px;
+    }
+
+    .cover__image {
+        max-width: 478.219px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 660px;
+        margin: 2vh auto;
+    }
+
+    .big-title {
+        font-size: 1.5rem;
+        margin-top: 5vh;
+    }
+
+    .author {
+        width: 100%;
+        max-width: 500px;
+        margin: 0;
+        font-size: 15px;
+        flex-direction: row;
+        padding: 1vh 0;
+    }
+
+    .wraper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .author__info {
+        margin-left: 0em;
+    }
+
+    .author__name {
+        font-size: .8em;
+        margin: 5px auto;
+    }
+
+    .author__profession {
+        font-size: .8em;
+    }
+
+    .author__bio {
+        font-size: .7em;
+        text-align: left;
+
+    }
+
+    .author__socials {
+        font-size: .95em;
+        text-align: end;
+    }
+
+    .author .wraper img {
+        border-radius: 200px;
+        max-width: 80px;
+        height: auto;
+        margin: 0;
+    }
+
+    figcaption {
+        font-size: 0.55em;
+    }
+
+    .post {
+        padding: 0;
+        width: 100%;
+        max-width: 500px;
+        margin: 2vh auto;
+    }
+
+    .content {
+        font-size: .75em;
+        text-align: left;
+    }
+
+    footer {
+        height: 4vh;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tagline {
+        font-size: 2em;
+    }
+
+    .supporting-tagline {
+        font-size: 1.5em;
+    }
+
+    .hero {
+        height: 30vh;
+    }
+
+    nav ul li:nth-child(1) {
+        display: none;
+    }
+
+    nav ul li:nth-child(2) {
+        display: block;
+    }
+
+    nav ul li:nth-child(3) {
+        display: block;
+    }
+
+    nav ul li:nth-child(4) {
+        display: block;
+    }
+
+    nav ul li:nth-child(5) {
+        display: block;
+    }
+
+    nav ul li:nth-child(6) {
+        display: block;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    .latest {
+        flex-direction: row;
+    }
+
+    .post-card {
+        width: 25%;
+        max-width: 290px;
+        align-items: center;
+        margin: 2vh 1vw;
+    }
+
+    .title {
+        font-size: .9rem;
+    }
+
+    .summery {
+        font-size: .59rem;
+    }
+
+    .newsletter-min {
+        padding: 1vh 1vw;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .newsletter-min form {
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .newsletter-min form input {
+        margin: 1vh 0 0 3vw;
+        padding-left: 1vw;
+        font-size: 1em;
+        font-weight: 500;
+        width: 80%;
+    }
+
+    .newsletter-min form button {
+        width: 20%;
+        margin: 2vh 0 1vh 2vw;
+        border-radius: 5px;
+        font-size: 0.85em;
+    }
+
+    .newsletter-min h1 {
+        font-size: 1.2em;
+    }
+
+    .latest article:last-child {
+        display: flex;
+    }
+
+
+    /*   post   */
+    .share__post {
+        display: block;
+        width: 2.5rem;
+    }
+
+    .share__post h1 {
+        font-size: .85em;
+        margin: .2em .19em;
+    }
+
+    .share__post ul li a i {
+        font-size: 12px;
+    }
+
+    .share__post ul li:first-child {
+        border-top-right-radius: 10px;
+    }
+
+    .share__post ul li:last-child {
+        border-bottom-right-radius: 10px;
+    }
+
+    .share__post ul li a i {
+        font-size: 12px;
+    }
+
+    .cover__image {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 2vh auto;
+    }
+
+    .big-title {
+        font-size: 2rem;
+        margin-top: 5vh;
+    }
+
+    .author {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0;
+        font-size: 18px;
+        flex-direction: row;
+        padding: 1vh 0;
+    }
+
+    .wraper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .author__info {
+        margin-left: 0em;
+    }
+
+    .author__name {
+        font-size: .8em;
+        margin: 5px auto;
+    }
+
+    .author__profession {
+        font-size: .8em;
+    }
+
+    .author__bio {
+        font-size: .7em;
+        text-align: left;
+
+    }
+
+    .author__socials {
+        font-size: .95em;
+        text-align: end;
+    }
+
+    .author .wraper img {
+        border-radius: 200px;
+        max-width: 90px;
+        height: auto;
+        margin: 0;
+    }
+
+    figcaption {
+        font-size: 0.55em;
+    }
+
+    .post {
+        padding: 0;
+        width: 60%;
+        max-width: 1000px;
+        margin: 2vh auto;
+    }
+
+    .content {
+        font-size: .9em;
+        text-align: left;
+    }
+
+    footer {
+        height: 4vh;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1634px) {
+    .latest article:last-child {
+        display: none;
+    }
+
+}
