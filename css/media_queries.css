@@ -1,5 +1,3 @@
-/*   Media queries */
-
 @media only screen and (min-width: 320px) {
 
     .brand {
@@ -51,13 +49,16 @@
     }
 
     .latest {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr;
+        margin: 5vh auto;
+        max-width: 400px;
     }
 
     .post-card {
         width: 80%;
-        max-width: 350px;
+        margin: 1vh auto;
         align-items: center;
     }
 
@@ -80,7 +81,7 @@
         font-size: .75rem;
         font-weight: 500;
         width: 90%;
-        max-width: 500px;
+        max-width: 400px;
     }
 
     .newsletter-min form button {
@@ -116,6 +117,7 @@
         margin: 1vh 0;
     }
 
+
     /*   post   */
 
     .share__post {
@@ -144,15 +146,31 @@
         font-size: 12px;
     }
 
-    .cover__image {}
+    .cover__image {
+        max-width: auto;
+    }
 
     .container {
+        display: flex;
+        flex-direction: row;
         width: 100%;
-        margin: 3rem auto;
+        justify-content: center;
+        margin: 5vh auto;
+        max-width: 435.188px;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr .5fr .5fr auto;
+        row-gap: 0;
+        justify-content: center;
+        max-width: 435.188px;
+
     }
 
     .big-title {
-        font-size: .9em;
+        font-size: 3vw;
     }
 
     .author {
@@ -177,6 +195,8 @@
 
     .author__profession {
         font-size: .6em;
+        text-align: center;
+        width: 100%;
     }
 
     .author__bio {
@@ -198,10 +218,6 @@
 
     figcaption {
         font-size: 0.55em;
-    }
-
-    .post {
-        padding: 0;
     }
 
     .content {
@@ -259,7 +275,11 @@
     }
 
     .latest {
-        flex-direction: row;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+
     }
 
     .latest article:last-child {
@@ -267,8 +287,8 @@
     }
 
     .post-card {
-        width: 30vw;
-        max-width: 260px;
+        width: 100%;
+        max-width: 280px;
         align-items: center;
     }
 
@@ -283,6 +303,7 @@
     .newsletter-min {
         padding: 1vh 1vw;
         width: 100%;
+        max-width: 850px;
         flex-direction: row;
         justify-content: center;
     }
@@ -311,9 +332,6 @@
     .newsletter-min h1 {
         font-size: 1.2em;
     }
-
-
-    /*   post   */
 
     .share__post {
         display: block;
@@ -357,10 +375,9 @@
     }
 
     .author {
-        width: 100%;
+        width: 95%;
         max-width: 500px;
         margin: 0;
-        font-size: 15px;
         flex-direction: row;
         padding: 1vh 0;
     }
@@ -379,16 +396,17 @@
     }
 
     .author__name {
-        font-size: .8em;
+        font-size: .7em;
         margin: 5px auto;
     }
 
     .author__profession {
-        font-size: .8em;
+        font-size: .65em;
+        text-align: left;
     }
 
     .author__bio {
-        font-size: .7em;
+        font-size: .55em;
         text-align: left;
 
     }
@@ -414,6 +432,11 @@
         width: 100%;
         max-width: 500px;
         margin: 2vh auto;
+    }
+
+    .post figure figcaption {
+        font-size: .66em;
+        color: #353535;
     }
 
     .content {
@@ -469,14 +492,17 @@
     }
 
     .latest {
-        flex-direction: row;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 980px;
     }
 
     .post-card {
-        width: 25%;
-        max-width: 290px;
+        width: 80%;
         align-items: center;
-        margin: 2vh 1vw;
+        max-width: 250px;
+        margin: 2vh auto;
     }
 
     .title {
@@ -490,6 +516,7 @@
     .newsletter-min {
         padding: 1vh 1vw;
         width: 100%;
+        max-width: 1420px;
         flex-direction: row;
         justify-content: center;
     }
@@ -520,6 +547,11 @@
 
     .latest article:last-child {
         display: flex;
+    }
+
+
+    figcaption {
+        font-size: 0.6em;
     }
 
 
@@ -569,7 +601,7 @@
         width: 100%;
         max-width: 1000px;
         margin: 0;
-        font-size: 18px;
+
         flex-direction: row;
         padding: 1vh 0;
     }
@@ -593,7 +625,7 @@
     }
 
     .author__profession {
-        font-size: .8em;
+        font-size: .9em;
     }
 
     .author__bio {
@@ -603,7 +635,7 @@
     }
 
     .author__socials {
-        font-size: .95em;
+        font-size: 1.1em;
         text-align: end;
     }
 
@@ -612,10 +644,6 @@
         max-width: 90px;
         height: auto;
         margin: 0;
-    }
-
-    figcaption {
-        font-size: 0.55em;
     }
 
     .post {
@@ -636,9 +664,4 @@
     }
 }
 
-@media only screen and (min-width: 1634px) {
-    .latest article:last-child {
-        display: none;
-    }
-
-}
+@media only screen and (min-width: 1634px) {}

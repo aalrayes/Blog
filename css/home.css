@@ -63,11 +63,9 @@
 }
 
 .latest {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3vh 0.5vw;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: .65fr .65fr .65fr .65fr;
 
 }
 
@@ -78,7 +76,7 @@
 
 .post-card {
   width: 100%;
-  margin: 1vh 3vw 5vh 3vw;
+  /* margin: 1vh 3vw 5vh 3vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +87,7 @@
 }
 
 .post-img {
-  max-width: 95%;
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
@@ -97,7 +95,7 @@
 .post-preview {
   display: flex;
   flex-direction: column;
-  margin: 0 1vw 1vh 1vw;
+
 }
 
 .title {
